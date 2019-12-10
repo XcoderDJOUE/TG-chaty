@@ -1,0 +1,158 @@
+.toggleFixed {
+  top: 0;
+  right: 0;
+  left:0;
+  padding-left:0px;
+  padding-right:0px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height:40px;
+  background:#fefefe;
+  padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 0px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  outline: none;
+  cursor: pointer;
+  color: #333;
+  .round {
+    width: 8px;
+    height: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: green;
+    float: left;
+	margin-left: 10px;
+
+  }
+
+  .text-msg {
+    float: left;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .chat-elem-right {
+    position: absolute;
+    float: right;
+    right: 0;
+    display: flex;
+    align-items: center;
+    color: #333;
+	margin-right: 10px;
+  }
+  .btn-action-chat {
+    cursor: pointer;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    width: 18px;
+    height: 18px;
+    background: #dddddd;
+    padding:0;
+  }
+
+  .msg-overlay-bubble-header__control {
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    box-sizing: border-box;
+    color: rgba(0,0,0,.6);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0;
+    height: 24px;
+    outline-width: 2px;
+    padding: 0;
+    position: relative;
+    transition-duration: 167ms;
+    transition-property: background-color,box-shadow,color;
+    transition-timing-function: cubic-bezier(0,0,.2,1);
+    vertical-align: middle;
+    border-radius: 12px;
+    width: 24px;
+  }
+  .msg-overlay-bubble-header__control::before {
+    transition-duration: .5s;
+  }
+  .msg-overlay-bubble-header__control .li-icon {
+    top: calc(50% + 4px);
+    box-sizing: content-box;
+    height: 16px;
+    left: calc(50% + 4px);
+    margin: -12px 0 0 -12px;
+    padding: 0;
+    position: absolute;
+    width: 16px;
+  }
+
+  .msg-overlay-bubble-header__control .li-icon > svg {
+    transition: transform 167ms;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0,0,.2,1);
+    display: block;
+    vertical-align: top;
+    color: rgba(0,0,0,.6);
+  }
+
+  .msg-overlay-bubble-header__control:hover {
+      background: #eee;
+  }
+}
+
+.toggleFixedBody{
+position:fixed;
+bottom:0;
+right:30px;
+max-height: calc(100vh - 90px);
+background: linear-gradient(to bottom,transparent 2px,#fff 2px);
+transform: translateY(0);
+transition-timing-function: cubic-bezier(.4,0,.2,1);
+transition-duration: 167ms;
+animation: fade-in 167ms cubic-bezier(.4,0,1,1);
+border-radius: 2px 2px 0 0;
+box-shadow: 0 0 0 1px rgba(0,0,0,.1),0 4px 6px rgba(0,0,0,.2);
+width:280px;
+
+	.bodyContent{
+	position: relative;
+	overflow: hidden;
+	height:400px;
+	flex-grow: 1;
+	-webkit-transition: height 0.2s; /* For Safari 3.1 to 6.0 */
+	transition: height 0.2s;
+	}
+	
+	.scrollabled{
+		overflow-y: auto;
+	}
+	
+
+
+	.search-back{
+			background: #f5f5f5;
+			padding:10px 0;
+	}
+
+	button, input, select, textarea {
+    font-family: inherit;
+		}
+		input, select {
+			vertical-align: middle;
+		}
+		
+
+}
+
+
+
+
+
+
+
+
+
